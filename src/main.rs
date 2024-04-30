@@ -32,7 +32,12 @@ fn main() {
     // debug mode but pretty
     println!("{:#?}", rect2);
     // debug with dbg! macro, dbg! take ownership by default but we can use reference
-    dbg!(&rect2); // show more detail information like line of code
+    let scale = 2;
+    let rect3 = Rectangle {
+        width: dbg!(30 * scale), // debug result show 30 * scale = 60
+        height: 50,
+    };
+    dbg!(&rect3); // show more detail information like line of code
 }
 
 fn area(width: u32, height: u32) -> u32 {
