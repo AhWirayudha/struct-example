@@ -29,6 +29,8 @@ fn main() {
     // derived trait
     // debug mode
     println!("{:?}", rect2); // :? debug trait print struct
+    // debug mode but pretty
+    println!("{:#?}", rect2);
 }
 
 fn area(width: u32, height: u32) -> u32 {
