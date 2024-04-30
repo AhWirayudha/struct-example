@@ -1,3 +1,5 @@
+// debug mode
+#[derive(Debug)]
 // struct rectangle
 struct Rectangle {
     width: u32,
@@ -23,6 +25,10 @@ fn main() {
     };
 
     println!("The area of the rectangle is {} square pixels.", area_struct(&rect2));
+
+    // derived trait
+    // debug mode
+    println!("{:?}", rect2); // :? debug trait print struct
 }
 
 fn area(width: u32, height: u32) -> u32 {
