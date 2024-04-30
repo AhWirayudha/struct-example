@@ -31,6 +31,8 @@ fn main() {
     println!("{:?}", rect2); // :? debug trait print struct
     // debug mode but pretty
     println!("{:#?}", rect2);
+    // debug with dbg! macro, dbg! take ownership by default but we can use reference
+    dbg!(&rect2); // show more detail information like line of code
 }
 
 fn area(width: u32, height: u32) -> u32 {
